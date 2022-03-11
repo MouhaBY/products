@@ -14,6 +14,7 @@ export default function ProductTable({ products, filterText, inStockOnly }) {
     useEffect(()=>{
         var results = filterProducts(products, filterText, inStockOnly)
         setFilteredProducts(results)
+        console.log(products)
     }
     ,[products, inStockOnly, filterText])
 

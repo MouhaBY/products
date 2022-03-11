@@ -30,7 +30,7 @@ export default function Products(){
                 filterText={filterText} 
                 inStockOnly={inStockOnly} 
             />
-            <ProductForm />
+            <ProductForm productsList={productsList} setProductsList={setProductsList} />
         </div>
     )
 }
